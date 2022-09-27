@@ -3,6 +3,7 @@
 
 
 using OOPnDOP.OOP;
+using OOPnDOP.DOP;
 
 namespace DevCommunity
 {
@@ -16,7 +17,12 @@ namespace DevCommunity
 
             OOPMain oop = new OOPMain();
 
+            //oop.DataSpeed();
+            //oop.Animals();
 
+            DOPMain dop = new DOPMain();
+
+            dop.DataSpeed();
 
 
             Console.WriteLine("Done");
