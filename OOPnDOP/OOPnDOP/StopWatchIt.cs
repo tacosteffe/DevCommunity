@@ -11,6 +11,12 @@ namespace OOPnDOP
     {
         public static void TimeIt(Action action, string name)
         {
+            //quick Warmup, avoid cold data
+            for(int i = 0; i < 2; i++)
+            {
+                action.Invoke();
+            }
+
             Stopwatch sw = Stopwatch.StartNew();
             action.Invoke();
             sw.Stop();

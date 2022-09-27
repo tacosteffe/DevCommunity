@@ -14,6 +14,11 @@ namespace OOPnDOP.OOP
         public void WorkData();
     }
 
+
+
+
+
+
     public class Item : IItem
     {
         public double X { get; set; }
@@ -38,6 +43,12 @@ namespace OOPnDOP.OOP
         }
     }
 
+
+
+
+
+
+
     public class Item2 : Item
     {
         public double Z { get; set; }
@@ -56,6 +67,11 @@ namespace OOPnDOP.OOP
     }
 
 
+
+
+
+
+
     public struct Item3 : IItem
     {
         public double X { get; set; }
@@ -69,7 +85,6 @@ namespace OOPnDOP.OOP
             Z = 3.0;
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void WorkData()
         {
             X = (Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X));
@@ -77,11 +92,4 @@ namespace OOPnDOP.OOP
             Z = (Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z));
         }
     }
-
-
-
-
-
-
-
 }

@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace OOPnDOP.DOP
 {
-    
+    //Plain old data
     public struct Item
     {
         public double X;
@@ -15,31 +15,47 @@ namespace OOPnDOP.DOP
         public double Z;
     }
 
-    public struct DataWork
+    public static class DataWork
     {
-        public void WorkData(Item it)
+        public static void WorkData(Item it)
         {
             it.X = (Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X));
             it.Y = (Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y));
             it.Z = (Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z));
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void WorkDataFI(Item it)
+        public static void WorkDataFI(Item it)
         {
             it.X = (Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X) / Math.Sqrt(it.X));
             it.Y = (Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y) / Math.Sqrt(it.Y));
             it.Z = (Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z) / Math.Sqrt(it.Z));
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void WorkDataFI(double X, double Y, double Z)
+        public static void WorkDataFI(double X, double Y, double Z)
         {
             X = (Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X) / Math.Sqrt(X));
             Y = (Math.Sqrt(Y) / Math.Sqrt(Y) / Math.Sqrt(Y) / Math.Sqrt(Y) / Math.Sqrt(Y) / Math.Sqrt(Y) / Math.Sqrt(Y) / Math.Sqrt(Y));
             Z = (Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z) / Math.Sqrt(Z));
         }
     }
+
+
+
+
+
+    public struct Transaction
+    {
+        public string Sender;
+        public string Reciever;
+
+
+    }
+
+
+
+
+
+
 
 
 

@@ -33,11 +33,23 @@ namespace OOPnDOP.OOP
             Console.ReadKey();
 
 
+
+
+
+
+
             //=========================
+
+
+
+
+
+
+
 
             StopWatchIt.TimeIt(() =>
             {
-                foreach (Item it in items)
+                foreach (IItem it in items)
                 {
                     it.WorkData();
                 }
@@ -45,19 +57,23 @@ namespace OOPnDOP.OOP
 
             Console.ReadKey();
 
-            //=========================
 
-            StopWatchIt.TimeIt(() =>
-            {
-                for (int i = 0; i < items.Count; ++i)
-                {
-                    items[i].WorkData();
-                }
-            }, "OOP For int");
 
-            Console.ReadKey();
+
+
+
+
+
 
             //=========================
+
+
+
+
+
+
+
+
 
             StopWatchIt.TimeIt(() =>
             {
@@ -66,11 +82,9 @@ namespace OOPnDOP.OOP
                 {
                     items2[i].WorkData();
                 }
-            }, "OOP For int using structs & caching int");
+            }, "OOP For int using structs");
 
             Console.ReadKey();
-
-
         }
 
 
