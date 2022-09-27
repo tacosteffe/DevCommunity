@@ -2,6 +2,8 @@
 
 
 
+using OOPnDOP.OOP;
+
 namespace DevCommunity
 {
 
@@ -10,7 +12,14 @@ namespace DevCommunity
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("AppStart");
+
+            OOPMain oop = new OOPMain();
+
+
+
+
+            Console.WriteLine("Done");
             Console.ReadKey();
         }
 
